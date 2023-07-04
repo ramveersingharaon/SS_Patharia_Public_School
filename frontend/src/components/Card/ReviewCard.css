@@ -1,0 +1,40 @@
+.reviewCard {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 5rem;
+  gap: 1rem;
+}
+.reviewCard p {
+  text-align: justify;
+}
+.reviewCard img {
+  width: 20vw;
+  height: 20vw;
+  border: 5px solid #613e97;
+  border-radius: 50%;
+}
+.commas {
+  color: rgba(26, 25, 25, 0.74);
+  margin: 0px 10px 5px 0px;
+  font-size: 30px;
+}
+
+@media (max-width: 900px) {
+  .reviewCard img {
+    width: 40vw;
+    height: 40vw;
+  }
+  .reviewWrapper {
+    width: 80%;
+  }
+  .reviewCard {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 2rem;
+    gap: 1rem;
+  }
+}

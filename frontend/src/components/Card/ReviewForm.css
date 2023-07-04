@@ -1,0 +1,74 @@
+.reviewFormContainer {
+  width: 50vw;
+  height: 80vh;
+  position: fixed;
+  z-index: 999;
+  padding: 1rem 2rem;
+  background-color: white;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.63);
+  top: 50%;
+  left: 50%;
+  margin-left: -25vw;
+  margin-top: -35vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.reviewFormContainer > fieldset {
+  /* background-color: #613e97; */
+
+  width: 100%;
+  /* height: 90%; */
+  padding: 1rem 2rem;
+  display: flex;
+  flex-direction: column;
+}
+legend {
+  color: white;
+  font-size: 25px;
+}
+.reviewFormContainer > fieldset > form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.reviewFormContainer > fieldset > form > input,
+textarea {
+  width: 100%;
+  padding: 1rem 2rem;
+  font-size: 20px;
+  outline: none;
+}
+.reviewFormContainer > fieldset > form .fileInput {
+  cursor: pointer;
+}
+.reviewFormContainer > fieldset > form > textarea {
+  height: 25vh;
+}
+
+@media (max-width: 900px) {
+  .reviewFormContainer {
+    width: 80vw;
+    margin-left: -40vw;
+  }
+}
+@media (max-width: 600px) {
+  .reviewFormContainer {
+    width: 90vw;
+    margin-left: -45vw;
+  }
+  form input,
+  textarea {
+    width: 100%;
+    padding: 0.5rem 1rem;
+    font-size: 18px;
+  }
+  .btn {
+    padding: 0.5rem 1rem;
+    font-size: 18px;
+  }
+  fieldset {
+    padding: 0.5rem 1rem;
+  }
+}

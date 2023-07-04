@@ -1,0 +1,98 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap");
+
+.footer {
+  margin-top: -200px;
+  width: 100vw;
+  min-height: 80vh;
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+}
+
+.footer h1 {
+  color: #f60;
+  font-size: 40px;
+  margin-bottom: 1rem;
+}
+.footer p {
+  color: white;
+  font-size: 22px;
+  padding: 10px 0;
+}
+.footer .footerWrapper {
+  margin-top: 200px;
+  display: flex;
+  gap: 6rem;
+  padding: 75px 35px 20px 35px;
+}
+.footer .footerWrapper div {
+  width: 100%;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.footer .footerWrapper div .navlink {
+  color: white;
+  text-decoration: none;
+  list-style: none;
+  font-size: 22px;
+}
+.footer .footerWrapper div .navlink:hover {
+  color: #f60;
+}
+.footer .bottomFooter {
+  width: 100vw;
+  padding: 20px 0;
+  text-align: center;
+  background-color: #4d1d96;
+}
+.contactIcon {
+  display: flex;
+  gap: 1rem;
+}
+
+@media (max-width: 950px) {
+  .footer .footerWrapper {
+    gap: 3rem;
+    padding: 75px 20px 20px 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .footer .footerWrapper div {
+    width: 45%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .footer h1 {
+    font-size: 30px;
+  }
+  .footer p {
+    font-size: 18px;
+  }
+  .footer .footerWrapper div .navlink {
+    font-size: 18px;
+  }
+}
+@media (max-width: 500px) {
+  .footer .footerWrapper div {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .footer .footerWrapper {
+    gap: 1rem;
+  }
+  .footer h1 {
+    font-size: 25px;
+  }
+  .footer p {
+    font-size: 15px;
+  }
+  .footer .footerWrapper div .navlink {
+    font-size: 15px;
+  }
+}

@@ -1,0 +1,45 @@
+.TeamCardBox {
+  flex-basis: calc(33% - 0.5rem);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.575);
+}
+.TeamCardBox img {
+  width: 25vw;
+  height: 25vw;
+}
+.TeamCardBox img:hover {
+  filter: grayscale(100);
+}
+.TeamCardBox h2,
+h3 {
+  background-color: #f60;
+  width: 100%;
+  text-align: center;
+  border-bottom: 1px solid;
+  color: white;
+  padding: 0.5rem 0;
+  font-family: "Roboto", sans-serif;
+}
+
+@media (max-width: 900px) {
+  .TeamCardBox img {
+    width: 40vw;
+    height: 40vw;
+  }
+  .TeamCardBox {
+    flex-basis: calc(50% - 1rem);
+  }
+}
+
+@media (max-width: 450px) {
+  .TeamCardBox img {
+    width: 90vw;
+    height: 90vw;
+  }
+  .TeamCardBox {
+    flex-basis: 100%;
+  }
+}

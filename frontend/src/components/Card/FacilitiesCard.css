@@ -1,0 +1,19 @@
+.facilitesCard {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin: 0 1rem;
+  gap: 1rem;
+  padding: 1rem;
+  background-color: white;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.788);
+  border-radius: 20px;
+  height: 100%;
+}
+.facilitesCard p {
+  text-align: justify;
+}
+.facilitesCard img {
+  width: 80%;
+  /* height: 70%; */
+}
